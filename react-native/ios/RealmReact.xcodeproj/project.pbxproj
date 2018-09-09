@@ -35,20 +35,6 @@
 			remoteGlobalIDString = F63FF2B01C1241E500B3B8E0;
 			remoteInfo = "RealmJS static";
 		};
-		F606903A1CA278F10003FB26 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F60690231CA277CC0003FB26 /* RealmJS.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = F63FF2EF1C16405C00B3B8E0;
-			remoteInfo = GCDWebServers;
-		};
-		F68759FA1D21949A007471AB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F60690231CA277CC0003FB26 /* RealmJS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F63FF2F01C16405C00B3B8E0;
-			remoteInfo = GCDWebServers;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -125,7 +111,6 @@
 		F60690241CA277CC0003FB26 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F68759FB1D21949A007471AB /* libGCDWebServers.a */,
 				F606902F1CA277CD0003FB26 /* libRealmJS.a */,
 				F60690331CA277CD0003FB26 /* RealmJSTests.xctest */,
 			);
@@ -146,7 +131,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				F606903B1CA278F10003FB26 /* PBXTargetDependency */,
 				F60690391CA278E10003FB26 /* PBXTargetDependency */,
 			);
 			name = RealmReact;
@@ -206,13 +190,6 @@
 			remoteRef = F60690321CA277CD0003FB26 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F68759FB1D21949A007471AB /* libGCDWebServers.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libGCDWebServers.a;
-			remoteRef = F68759FA1D21949A007471AB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -232,11 +209,6 @@
 			isa = PBXTargetDependency;
 			name = "RealmJS static";
 			targetProxy = F60690381CA278E10003FB26 /* PBXContainerItemProxy */;
-		};
-		F606903B1CA278F10003FB26 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GCDWebServers;
-			targetProxy = F606903A1CA278F10003FB26 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -344,14 +316,13 @@
 					"$(inherited)",
 					"$(SRCROOT)/../../src/**",
 					"$(SRCROOT)/../../vendor/realm-ios/include",
-					"$(SRCROOT)/../../vendor/GCDWebServer/GCDWebServer/**",
 					"$(SRCROOT)/../../../react-native/React/**",
 					"$(SRCROOT)/../../tests/react-test-app/node_modules/react-native/React/**",
 					"$(SRCROOT)/../../examples/ReactExample/node_modules/react-native/React/**",
 					"$(SRCROOT)/../../vendor",
-					"$(SRCROOT)/../../../../ios/Pods/Headers/Public/**"
+					"$(SRCROOT)/../../../../ios/Pods/Headers/Public/**",
 				);
-				OTHER_LIBTOOLFLAGS = "$(BUILT_PRODUCTS_DIR)/libGCDWebServers.a";
+				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -364,12 +335,11 @@
 					"$(inherited)",
 					"$(SRCROOT)/../../src/**",
 					"$(SRCROOT)/../../vendor/realm-ios/include",
-					"$(SRCROOT)/../../vendor/GCDWebServer/GCDWebServer/**",
 					"$(SRCROOT)/../../../react-native/React/**",
 					"$(SRCROOT)/../../tests/react-test-app/node_modules/react-native/React/**",
 					"$(SRCROOT)/../../examples/ReactExample/node_modules/react-native/React/**",
 					"$(SRCROOT)/../../vendor",
-					"$(SRCROOT)/../../../../ios/Pods/Headers/Public/**"
+					"$(SRCROOT)/../../../../ios/Pods/Headers/Public/**",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
